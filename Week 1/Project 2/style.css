@@ -10,30 +10,53 @@
         height: 100%;
         width: 100%;
     }
-    body{
-        background: linear-gradient(to right, #111, #29373e);
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(to right, #0f172a, #1e293b);
     }
 
     .contactBox {
-        position: absolute; 
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 20px; 
-        background: linear-gradient(to right, #abbdff, #294861);
-        width: 350px;
-        height: 87%;
-        border-radius: 20px;
-        box-shadow: white 5px 5px 10px;
+        background: linear-gradient(to right, #38bdf8, #2563eb);
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 15px rgba(0, 255, 255, 0.2);
+        width: 370px;
     }
+
+    /* Form Fields */
     .form-control {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
         border-radius: 8px;
-        border: 1px solid #ccc;
-        transition: all 0.3s ease-in-out;
     }
 
-    button{
-        position: absolute;
-        bottom: 10px;
+    .form-control:focus {
+        border-color: #000000;
+        box-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
     }
 
+    /* Placeholder Color */
+    ::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    /* Button */
+    .submit {
+        border: 2px solid black;
+        background-color: #31494d;
+        color: white;
+        width: 100%;
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 18px;
+        z-index: 10;
+    }
+
+    .submit:hover {
+        background-color: #0284c7;
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(6, 182, 212, 0.5);
+    }
